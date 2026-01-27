@@ -1,0 +1,12 @@
+namespace Domain.Entities;
+
+public class Topic
+{
+    public int Id { get; set; }
+    public int PartId { get; set; }
+    public string TopicName { get; set; } = string.Empty;
+    public string? Context { get; set; }
+    public string? Purpose { get; set; }
+    public string? RecipientRole { get; set; }
+    public int DifficultyLevelId { get; set; }
+}
