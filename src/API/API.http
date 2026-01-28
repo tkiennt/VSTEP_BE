@@ -1,6 +1,94 @@
 @API_HostAddress = http://localhost:5268
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
 
-GET {{API_HostAddress}}/weatherforecast/
-Accept: application/json
+### ====================
+### AUTHENTICATION ENDPOINTS
+### ====================
 
-###
+### 1. Register New User (Always assigned "User" role)
+POST {{API_HostAddress}}/api/auth/register
+Content-Type: application/json
+
+{
+  "name": "Test User",
+  "username": "testuser",
+  "email": "testuser@example.com",
+  "phoneNumber": "+84123456789",
+  "password": "TestPassword123!"
+}
+
+### 2. Login
+POST {{API_HostAddress}}/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "testuser",
+  "password": "TestPassword123!"
+}
+
+### 3. Logout (requires authentication)
+POST {{API_HostAddress}}/api/auth/logout
+Authorization: Bearer {{token}}
+
+### 4. Validate Token (requires authentication)
+POST {{API_HostAddress}}/api/auth/validate
+Authorization: Bearer {{token}}
+
+### 5. Forgot Password
+POST {{API_HostAddress}}/api/auth/forgot-password
+Content-Type: application/json
+
+{
+  "email": "testuser@example.com"
+}
+
+### 6. Reset Password
+POST {{API_HostAddress}}/api/auth/reset-password
+Content-Type: application/json
+
+{
+  "token": "YOUR_RESET_TOKEN_FROM_DATABASE",
+  "newPassword": "NewPassword123!"
+}
+
+### 7. Change Password (requires authentication)
+POST {{API_HostAddress}}/api/auth/change-password
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "currentPassword": "TestPassword123!",
+  "newPassword": "NewPassword456!"
+}
+
+### ====================
+### USER ENDPOINTS
+### ====================
+
+### 8. Get User Profile (requires authentication)
+GET {{API_HostAddress}}/api/user/profile
+Authorization: Bearer {{token}}
+
+### 9. Update User Profile (requires authentication)
+PUT {{API_HostAddress}}/api/user/profile
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "name": "Updated Name",
+  "email": "newemail@example.com",
+  "targetLevelId": 2
+}
+
+### ====================
+### HEALTH CHECK ENDPOINTS
+### ====================
+
+### 10. Ping API
+GET {{API_HostAddress}}/api/ping
+
+### 11. Health Check
+GET {{API_HostAddress}}/api/health
+
+### 12. Database Health Check
+GET {{API_HostAddress}}/api/health/db

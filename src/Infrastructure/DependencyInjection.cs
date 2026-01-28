@@ -13,8 +13,11 @@ public static class DependencyInjection
         this IServiceCollection services,
         IConfiguration configuration)
     {
-        // Register DbContext
-        services.AddDbContext<ApplicationDbContext>();
+        // Register DbContext with MySQL
+        var connectionString = configuration.GetConnectionString("DefaultConnection");
+        services.AddDbContext<ApplicationDbContext>(options =>
+            options.UseMySql(connectionString, 
+                ServerVersion.AutoDetect(connectionString)));
 
         // Register repositories
         services.AddScoped<IUserRepository, UserRepository>();

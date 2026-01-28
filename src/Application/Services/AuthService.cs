@@ -57,20 +57,11 @@ public class AuthService : IAuthService
 
     public async Task<AuthResponse> RegisterAsync(RegisterRequest request)
     {
-        if (await _userRepository.ExistsByUsernameAsync(request.Username))
-        {
-            throw new InvalidOperationException("Username already exists");
-        }
-
-        if (await _userRepository.ExistsByEmailAsync(request.Email))
-        {
-            throw new InvalidOperationException("Email already exists");
-        }
-
-        // Only allow Admin role to be set during registration if explicitly requested
-        // Otherwise default to User role
-        var role = request.Role == Role.Admin ? Role.User : request.Role;
-
+        // Note: Username and email uniqueness validation is now handled by FluentValidation
+        // in RegisterRequestValidator before this method is called
+        
+        // Security: Always assign User role during registration
+        // Roles can only be changed by administrators through user management endpoints
         var user = new User
         {
             Name = string.IsNullOrWhiteSpace(request.Name) ? request.Username : request.Name,
@@ -78,7 +69,7 @@ public class AuthService : IAuthService
             Email = request.Email,
             PhoneNumber = request.PhoneNumber,
             PasswordHash = BCrypt.Net.BCrypt.HashPassword(request.Password),
-            Role = role,
+            Role = Role.User, // Always User role for new registrations
             TargetLevelId = 1,
             CreatedAt = DateTime.UtcNow,
             IsActive = true
