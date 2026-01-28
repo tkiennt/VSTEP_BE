@@ -39,7 +39,8 @@ namespace Infrastructure.Data.Configurations
 
             builder.Property(e => e.Role)
                    .HasColumnName("role")
-                   .HasConversion<int>()
+                   .HasConversion<string>()
+                   .HasMaxLength(20)
                    .IsRequired();
 
             builder.Property(e => e.TargetLevelId)

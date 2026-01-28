@@ -51,6 +51,15 @@ public class AuthController : ControllerBase
         }
     }
 
+    [HttpPost("logout")]
+    [Microsoft.AspNetCore.Authorization.Authorize]
+    public IActionResult Logout()
+    {
+        // JWT is stateless, so logout is handled on the client side by removing the token
+        // Optionally, you can implement token blacklisting here if needed
+        return Ok(new { message = "Logged out successfully. Please remove the token from client storage." });
+    }
+
     [HttpPost("validate")]
     [Microsoft.AspNetCore.Authorization.Authorize]
     public async Task<IActionResult> ValidateToken()

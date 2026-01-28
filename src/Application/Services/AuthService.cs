@@ -47,9 +47,10 @@ public class AuthService : IAuthService
         return new AuthResponse
         {
             Token = token,
+            UserId = user.Id,
             Username = user.Username,
             Email = user.Email,
-            Role = user.Role,
+            Role = user.Role.ToString(),
             ExpiresAt = expiresAt
         };
     }
@@ -92,9 +93,10 @@ public class AuthService : IAuthService
         return new AuthResponse
         {
             Token = token,
+            UserId = createdUser.Id,
             Username = createdUser.Username,
             Email = createdUser.Email,
-            Role = createdUser.Role,
+            Role = createdUser.Role.ToString(),
             ExpiresAt = expiresAt
         };
     }

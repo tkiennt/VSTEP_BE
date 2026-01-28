@@ -276,28 +276,27 @@ The project uses **MySQL** with a **Third Normal Form (3NF)** schema. The databa
 
 ### 1. Create Database
 
-Run the main schema script in MySQL:
+Run the complete setup script in MySQL:
 
 ```bash
-mysql -u root -p < scripts/vstep_writing_3nf.sql
+mysql -u root -p < Scripts/vstep_writing.sql
 ```
 
-Or open `scripts/vstep_writing_3nf.sql` in MySQL Workbench/CLI and execute the entire script.
+Or open `Scripts/vstep_writing.sql` in MySQL Workbench/CLI and execute the entire script.
 
 **This script will:**
-- Create database `vstep_writing` with UTF-8 encoding
+- Drop and recreate database `vstep_writing` (utf8mb4)
 - Create all necessary tables with proper relationships and constraints
-- Seed initial data (1 level, 2 part types, 3 practice modes)
+- Insert seed data for:
+  - 6 proficiency levels (A1, A2, B1, B2, C1, C2)
+  - 2 part types (Writing Part 1 & 2)
+  - 5 practice modes (full test, by part, timed, untimed, random)
+  - Sample hint types, prompt purposes, and sample types
+  - Default admin user (username: `admin`, password: `Admin123!`)
+- Users table includes: username, password_hash, role (VARCHAR), updated_at, is_active
+- Password reset tokens table with 24-hour expiration
 
-### 2. Add Password Reset Table (if needed)
-
-If you created the database before password reset functionality was added:
-
-```bash
-mysql -u root -p vstep_writing < scripts/add_password_reset_tokens.sql
-```
-
-### 3. Database Schema Overview
+### 2. Database Schema Overview
 
 **Core Tables:**
 - `users` - User accounts with authentication data
@@ -319,7 +318,7 @@ mysql -u root -p vstep_writing < scripts/add_password_reset_tokens.sql
 - Topics belong to one part and one difficulty level
 - User submissions belong to one practice session, topic, and part
 
-### 4. Connection String Configuration
+### 3. Connection String Configuration
 
 Update your connection string in `src/API/appsettings.json` or `src/API/appsettings.Development.json`:
 
