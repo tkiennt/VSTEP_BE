@@ -644,19 +644,5 @@ dotnet watch --project src/API/API.csproj
 
 ---
 
-## License
-
-[Add your license information here]
-
-## Contributing
-
-[Add contributing guidelines here]
-
-## Support
-
-For issues or questions, please [create an issue](link-to-issues) or contact the development team.
-
----
-
 **Last Updated**: January 2026
 
