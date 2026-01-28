@@ -15,4 +15,6 @@ public class UserSubmission
     public virtual PracticeSession? Session { get; set; }
     public virtual Topic? Topic { get; set; }
     public virtual Part? Part { get; set; }
+    public virtual LanguageCheck? LanguageCheck { get; set; }
+    public virtual AIEvaluation? AIEvaluation { get; set; }
 }

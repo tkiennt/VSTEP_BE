@@ -1,0 +1,190 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\FPT STUDY\\8_SPRING 2026\\SWD392\\Github\\fptu-swd392\\Backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5BDAB160-5258-45DA-1CDF-4BFCF367E785}|src\\Application\\Application.csproj|d:\\fpt study\\8_spring 2026\\swd392\\github\\fptu-swd392\\backend\\src\\application\\services\\hintservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BDAB160-5258-45DA-1CDF-4BFCF367E785}|src\\Application\\Application.csproj|solutionrelative:src\\application\\services\\hintservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BDAB160-5258-45DA-1CDF-4BFCF367E785}|src\\Application\\Application.csproj|d:\\fpt study\\8_spring 2026\\swd392\\github\\fptu-swd392\\backend\\src\\application\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BDAB160-5258-45DA-1CDF-4BFCF367E785}|src\\Application\\Application.csproj|solutionrelative:src\\application\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BDAB160-5258-45DA-1CDF-4BFCF367E785}|src\\Application\\Application.csproj|d:\\fpt study\\8_spring 2026\\swd392\\github\\fptu-swd392\\backend\\src\\application\\services\\aievaluationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BDAB160-5258-45DA-1CDF-4BFCF367E785}|src\\Application\\Application.csproj|solutionrelative:src\\application\\services\\aievaluationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BDAB160-5258-45DA-1CDF-4BFCF367E785}|src\\Application\\Application.csproj|d:\\fpt study\\8_spring 2026\\swd392\\github\\fptu-swd392\\backend\\src\\application\\mappings\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BDAB160-5258-45DA-1CDF-4BFCF367E785}|src\\Application\\Application.csproj|solutionrelative:src\\application\\mappings\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BDAB160-5258-45DA-1CDF-4BFCF367E785}|src\\Application\\Application.csproj|d:\\fpt study\\8_spring 2026\\swd392\\github\\fptu-swd392\\backend\\src\\application\\dtos\\dashboard\\dashboardstatsresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BDAB160-5258-45DA-1CDF-4BFCF367E785}|src\\Application\\Application.csproj|solutionrelative:src\\application\\dtos\\dashboard\\dashboardstatsresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BDAB160-5258-45DA-1CDF-4BFCF367E785}|src\\Application\\Application.csproj|d:\\fpt study\\8_spring 2026\\swd392\\github\\fptu-swd392\\backend\\src\\application\\dtos\\auth\\forgotpasswordrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BDAB160-5258-45DA-1CDF-4BFCF367E785}|src\\Application\\Application.csproj|solutionrelative:src\\application\\dtos\\auth\\forgotpasswordrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BDAB160-5258-45DA-1CDF-4BFCF367E785}|src\\Application\\Application.csproj|d:\\fpt study\\8_spring 2026\\swd392\\github\\fptu-swd392\\backend\\src\\application\\dtos\\auth\\changepasswordrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BDAB160-5258-45DA-1CDF-4BFCF367E785}|src\\Application\\Application.csproj|solutionrelative:src\\application\\dtos\\auth\\changepasswordrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BDAB160-5258-45DA-1CDF-4BFCF367E785}|src\\Application\\Application.csproj|d:\\fpt study\\8_spring 2026\\swd392\\github\\fptu-swd392\\backend\\src\\application\\dtos\\auth\\authresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BDAB160-5258-45DA-1CDF-4BFCF367E785}|src\\Application\\Application.csproj|solutionrelative:src\\application\\dtos\\auth\\authresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BDAB160-5258-45DA-1CDF-4BFCF367E785}|src\\Application\\Application.csproj|d:\\fpt study\\8_spring 2026\\swd392\\github\\fptu-swd392\\backend\\src\\application\\validators\\registerrequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BDAB160-5258-45DA-1CDF-4BFCF367E785}|src\\Application\\Application.csproj|solutionrelative:src\\application\\validators\\registerrequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBAFC0F9-5B69-AE5B-776E-B650E010DF04}|src\\API\\API.csproj|d:\\fpt study\\8_spring 2026\\swd392\\github\\fptu-swd392\\backend\\src\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBAFC0F9-5B69-AE5B-776E-B650E010DF04}|src\\API\\API.csproj|solutionrelative:src\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HintService.cs",
+              "DocumentMoniker": "D:\\FPT STUDY\\8_SPRING 2026\\SWD392\\Github\\fptu-swd392\\Backend\\src\\Application\\Services\\HintService.cs",
+              "RelativeDocumentMoniker": "src\\Application\\Services\\HintService.cs",
+              "ToolTip": "D:\\FPT STUDY\\8_SPRING 2026\\SWD392\\Github\\fptu-swd392\\Backend\\src\\Application\\Services\\HintService.cs",
+              "RelativeToolTip": "src\\Application\\Services\\HintService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-28T16:26:26.241Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "D:\\FPT STUDY\\8_SPRING 2026\\SWD392\\Github\\fptu-swd392\\Backend\\src\\Application\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "src\\Application\\Services\\AuthService.cs",
+              "ToolTip": "D:\\FPT STUDY\\8_SPRING 2026\\SWD392\\Github\\fptu-swd392\\Backend\\src\\Application\\Services\\AuthService.cs",
+              "RelativeToolTip": "src\\Application\\Services\\AuthService.cs",
+              "ViewState": "AgIAAJcAAAAAAAAAAAAAACIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-28T16:25:13.583Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AIEvaluationService.cs",
+              "DocumentMoniker": "D:\\FPT STUDY\\8_SPRING 2026\\SWD392\\Github\\fptu-swd392\\Backend\\src\\Application\\Services\\AIEvaluationService.cs",
+              "RelativeDocumentMoniker": "src\\Application\\Services\\AIEvaluationService.cs",
+              "ToolTip": "D:\\FPT STUDY\\8_SPRING 2026\\SWD392\\Github\\fptu-swd392\\Backend\\src\\Application\\Services\\AIEvaluationService.cs",
+              "RelativeToolTip": "src\\Application\\Services\\AIEvaluationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-28T16:25:11.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserProfile.cs",
+              "DocumentMoniker": "D:\\FPT STUDY\\8_SPRING 2026\\SWD392\\Github\\fptu-swd392\\Backend\\src\\Application\\Mappings\\UserProfile.cs",
+              "RelativeDocumentMoniker": "src\\Application\\Mappings\\UserProfile.cs",
+              "ToolTip": "D:\\FPT STUDY\\8_SPRING 2026\\SWD392\\Github\\fptu-swd392\\Backend\\src\\Application\\Mappings\\UserProfile.cs",
+              "RelativeToolTip": "src\\Application\\Mappings\\UserProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-28T16:25:11.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DashboardStatsResponse.cs",
+              "DocumentMoniker": "D:\\FPT STUDY\\8_SPRING 2026\\SWD392\\Github\\fptu-swd392\\Backend\\src\\Application\\DTOs\\Dashboard\\DashboardStatsResponse.cs",
+              "RelativeDocumentMoniker": "src\\Application\\DTOs\\Dashboard\\DashboardStatsResponse.cs",
+              "ToolTip": "D:\\FPT STUDY\\8_SPRING 2026\\SWD392\\Github\\fptu-swd392\\Backend\\src\\Application\\DTOs\\Dashboard\\DashboardStatsResponse.cs",
+              "RelativeToolTip": "src\\Application\\DTOs\\Dashboard\\DashboardStatsResponse.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA4wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-28T16:25:01.399Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ForgotPasswordRequest.cs",
+              "DocumentMoniker": "D:\\FPT STUDY\\8_SPRING 2026\\SWD392\\Github\\fptu-swd392\\Backend\\src\\Application\\DTOs\\Auth\\ForgotPasswordRequest.cs",
+              "RelativeDocumentMoniker": "src\\Application\\DTOs\\Auth\\ForgotPasswordRequest.cs",
+              "ToolTip": "D:\\FPT STUDY\\8_SPRING 2026\\SWD392\\Github\\fptu-swd392\\Backend\\src\\Application\\DTOs\\Auth\\ForgotPasswordRequest.cs",
+              "RelativeToolTip": "src\\Application\\DTOs\\Auth\\ForgotPasswordRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-28T16:12:33.128Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ChangePasswordRequest.cs",
+              "DocumentMoniker": "D:\\FPT STUDY\\8_SPRING 2026\\SWD392\\Github\\fptu-swd392\\Backend\\src\\Application\\DTOs\\Auth\\ChangePasswordRequest.cs",
+              "RelativeDocumentMoniker": "src\\Application\\DTOs\\Auth\\ChangePasswordRequest.cs",
+              "ToolTip": "D:\\FPT STUDY\\8_SPRING 2026\\SWD392\\Github\\fptu-swd392\\Backend\\src\\Application\\DTOs\\Auth\\ChangePasswordRequest.cs",
+              "RelativeToolTip": "src\\Application\\DTOs\\Auth\\ChangePasswordRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-28T16:12:32.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AuthResponse.cs",
+              "DocumentMoniker": "D:\\FPT STUDY\\8_SPRING 2026\\SWD392\\Github\\fptu-swd392\\Backend\\src\\Application\\DTOs\\Auth\\AuthResponse.cs",
+              "RelativeDocumentMoniker": "src\\Application\\DTOs\\Auth\\AuthResponse.cs",
+              "ToolTip": "D:\\FPT STUDY\\8_SPRING 2026\\SWD392\\Github\\fptu-swd392\\Backend\\src\\Application\\DTOs\\Auth\\AuthResponse.cs",
+              "RelativeToolTip": "src\\Application\\DTOs\\Auth\\AuthResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-28T16:12:27.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RegisterRequestValidator.cs",
+              "DocumentMoniker": "D:\\FPT STUDY\\8_SPRING 2026\\SWD392\\Github\\fptu-swd392\\Backend\\src\\Application\\Validators\\RegisterRequestValidator.cs",
+              "RelativeDocumentMoniker": "src\\Application\\Validators\\RegisterRequestValidator.cs",
+              "ToolTip": "D:\\FPT STUDY\\8_SPRING 2026\\SWD392\\Github\\fptu-swd392\\Backend\\src\\Application\\Validators\\RegisterRequestValidator.cs",
+              "RelativeToolTip": "src\\Application\\Validators\\RegisterRequestValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-28T16:12:23.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\FPT STUDY\\8_SPRING 2026\\SWD392\\Github\\fptu-swd392\\Backend\\src\\API\\Program.cs",
+              "RelativeDocumentMoniker": "src\\API\\Program.cs",
+              "ToolTip": "D:\\FPT STUDY\\8_SPRING 2026\\SWD392\\Github\\fptu-swd392\\Backend\\src\\API\\Program.cs",
+              "RelativeToolTip": "src\\API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-28T16:12:04.219Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

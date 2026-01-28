@@ -1,4 +1,5 @@
 using Application.Interfaces.Repositories;
+using Application.Interfaces.Services;
 using Domain.Entities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -10,8 +11,18 @@ namespace API.Controllers;
 public class TopicsController : ControllerBase
 {
     private readonly ITopicRepository _repo;
+    private readonly ILearningService _learningService;
+    private readonly IHintService _hintService;
 
-    public TopicsController(ITopicRepository repo) => _repo = repo;
+    public TopicsController(
+        ITopicRepository repo,
+        ILearningService learningService,
+        IHintService hintService)
+    {
+        _repo = repo;
+        _learningService = learningService;
+        _hintService = hintService;
+    }
 
     [HttpGet("by-part/{partId:int}")]
     public async Task<IActionResult> GetByPart(int partId) =>
@@ -22,6 +33,20 @@ public class TopicsController : ControllerBase
     {
         var item = await _repo.GetByIdAsync(id);
         return item == null ? NotFound() : Ok(item);
+    }
+
+    [HttpGet("{id:int}/learning-resources/{levelId:int}")]
+    public async Task<IActionResult> GetLearningResources(int id, int levelId)
+    {
+        var resources = await _learningService.GetTopicResourcesAsync(id, levelId);
+        return Ok(resources);
+    }
+
+    [HttpGet("{id:int}/hints/{levelId:int}")]
+    public async Task<IActionResult> GetHints(int id, int levelId)
+    {
+        var hints = await _hintService.GetHintsAsync(id, levelId);
+        return Ok(hints);
     }
 
     [HttpPost]

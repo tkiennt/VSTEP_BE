@@ -15,4 +15,6 @@ public class Part
     public virtual PartType? PartType { get; set; }
     public virtual ICollection<Topic> Topics { get; set; } = new List<Topic>();
     public virtual ICollection<UserSubmission> UserSubmissions { get; set; } = new List<UserSubmission>();
+    public virtual ICollection<ScoringCriteria> ScoringCriteria { get; set; } = new List<ScoringCriteria>();
+    public virtual ICollection<SystemPrompt> SystemPrompts { get; set; } = new List<SystemPrompt>();
 }

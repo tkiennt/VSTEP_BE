@@ -1,4 +1,5 @@
 using Application.Interfaces.Repositories;
+using Application.Interfaces.Services;
 using Domain.Entities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -12,11 +13,16 @@ public class UserSubmissionsController : ControllerBase
 {
     private readonly IUserSubmissionRepository _repo;
     private readonly IPracticeSessionRepository _sessionRepo;
+    private readonly IAIEvaluationService _evaluationService;
 
-    public UserSubmissionsController(IUserSubmissionRepository repo, IPracticeSessionRepository sessionRepo)
+    public UserSubmissionsController(
+        IUserSubmissionRepository repo,
+        IPracticeSessionRepository sessionRepo,
+        IAIEvaluationService evaluationService)
     {
         _repo = repo;
         _sessionRepo = sessionRepo;
+        _evaluationService = evaluationService;
     }
 
     private int? GetCurrentUserId()
@@ -47,6 +53,29 @@ public class UserSubmissionsController : ControllerBase
         return Ok(item);
     }
 
+    [HttpGet("{id:int}/evaluation")]
+    public async Task<IActionResult> GetEvaluation(int id)
+    {
+        var submission = await _repo.GetByIdAsync(id);
+        if (submission == null) return NotFound();
+        
+        var session = await _sessionRepo.GetByIdAsync(submission.SessionId);
+        if (session == null) return NotFound();
+        
+        var userId = GetCurrentUserId();
+        if (userId != session.UserId) return Forbid();
+
+        try 
+        {
+            var evaluation = await _evaluationService.EvaluateSubmissionAsync(id);
+            return Ok(evaluation);
+        }
+        catch (InvalidOperationException ex)
+        {
+            return BadRequest(ex.Message);
+        }
+    }
+
     [HttpPost]
     public async Task<IActionResult> Create([FromBody] CreateUserSubmissionRequest request)
     {
@@ -64,7 +93,11 @@ public class UserSubmissionsController : ControllerBase
             EnableHint = request.EnableHint
         };
         var created = await _repo.CreateAsync(entity);
-        return CreatedAtAction(nameof(GetById), new { id = created.Id }, created);
+        
+        // Trigger evaluation immediately (optional, or can be called separately)
+        var evaluation = await _evaluationService.EvaluateSubmissionAsync(created.Id);
+
+        return CreatedAtAction(nameof(GetById), new { id = created.Id }, new { submission = created, evaluation });
     }
 }
 

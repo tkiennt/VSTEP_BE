@@ -82,11 +82,12 @@ builder.Services.AddSwaggerGen(c =>
     // Add JWT Authentication to Swagger
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
-        Description = "JWT Authorization header using the Bearer scheme. Example: \"Authorization: Bearer {token}\"",
+        Description = "Enter JWT Bearer token in the text input below. Do NOT add 'Bearer' prefix - it will be added automatically.",
         Name = "Authorization",
         In = ParameterLocation.Header,
-        Type = SecuritySchemeType.ApiKey,
-        Scheme = "Bearer"
+        Type = SecuritySchemeType.Http,
+        Scheme = "bearer",
+        BearerFormat = "JWT"
     });
 
     c.AddSecurityRequirement(new OpenApiSecurityRequirement
@@ -109,6 +110,10 @@ builder.Services.AddSwaggerGen(c =>
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IJwtService, JwtService>();
 builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<ILearningService, LearningService>();
+builder.Services.AddScoped<IHintService, HintService>();
+builder.Services.AddScoped<IDashboardService, DashboardService>();
+builder.Services.AddScoped<IAIEvaluationService, AIEvaluationService>();
 
 // Dependency Injection - Infrastructure
 builder.Services.AddInfrastructure(builder.Configuration);

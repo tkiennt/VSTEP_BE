@@ -14,4 +14,7 @@ public class Topic
     public virtual Part? Part { get; set; }
     public virtual Level? DifficultyLevel { get; set; }
     public virtual ICollection<UserSubmission> UserSubmissions { get; set; } = new List<UserSubmission>();
+    public virtual ICollection<VocabularySet> VocabularySets { get; set; } = new List<VocabularySet>();
+    public virtual ICollection<SampleText> SampleTexts { get; set; } = new List<SampleText>();
+    public virtual ICollection<Hint> Hints { get; set; } = new List<Hint>();
 }

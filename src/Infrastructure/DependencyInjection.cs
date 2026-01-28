@@ -30,6 +30,13 @@ public static class DependencyInjection
         services.AddScoped<IPracticeSessionRepository, PracticeSessionRepository>();
         services.AddScoped<ITopicRepository, TopicRepository>();
         services.AddScoped<IUserSubmissionRepository, UserSubmissionRepository>();
+        services.AddScoped<IVocabularySetRepository, VocabularySetRepository>();
+        services.AddScoped<ISampleTextRepository, SampleTextRepository>();
+        services.AddScoped<IHintRepository, HintRepository>();
+        services.AddScoped<IAIEvaluationRepository, AIEvaluationRepository>();
+        services.AddScoped<ISystemPromptRepository, SystemPromptRepository>();
+        services.AddScoped<IScoringCriteriaRepository, ScoringCriteriaRepository>();
+        services.AddScoped<ILanguageCheckRepository, LanguageCheckRepository>();
 
         return services;
     }
