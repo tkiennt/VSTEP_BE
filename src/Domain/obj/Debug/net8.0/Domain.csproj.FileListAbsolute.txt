@@ -22,3 +22,15 @@ D:\FPT STUDY\8_SPRING 2026\SWD392\Github\fptu-swd392\Backend\src\Domain\obj\Debu
 D:\FPT STUDY\8_SPRING 2026\SWD392\Github\fptu-swd392\Backend\src\Domain\obj\Debug\net8.0\refint\Domain.dll
 D:\FPT STUDY\8_SPRING 2026\SWD392\Github\fptu-swd392\Backend\src\Domain\obj\Debug\net8.0\Domain.pdb
 D:\FPT STUDY\8_SPRING 2026\SWD392\Github\fptu-swd392\Backend\src\Domain\obj\Debug\net8.0\ref\Domain.dll
+D:\FPT STUDY\8_SPRING 2026\SWD392\Personal-Github\src\Domain\bin\Debug\net8.0\Domain.deps.json
+D:\FPT STUDY\8_SPRING 2026\SWD392\Personal-Github\src\Domain\bin\Debug\net8.0\Domain.dll
+D:\FPT STUDY\8_SPRING 2026\SWD392\Personal-Github\src\Domain\bin\Debug\net8.0\Domain.pdb
+D:\FPT STUDY\8_SPRING 2026\SWD392\Personal-Github\src\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\FPT STUDY\8_SPRING 2026\SWD392\Personal-Github\src\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+D:\FPT STUDY\8_SPRING 2026\SWD392\Personal-Github\src\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+D:\FPT STUDY\8_SPRING 2026\SWD392\Personal-Github\src\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+D:\FPT STUDY\8_SPRING 2026\SWD392\Personal-Github\src\Domain\obj\Debug\net8.0\Domain.sourcelink.json
+D:\FPT STUDY\8_SPRING 2026\SWD392\Personal-Github\src\Domain\obj\Debug\net8.0\Domain.dll
+D:\FPT STUDY\8_SPRING 2026\SWD392\Personal-Github\src\Domain\obj\Debug\net8.0\refint\Domain.dll
+D:\FPT STUDY\8_SPRING 2026\SWD392\Personal-Github\src\Domain\obj\Debug\net8.0\Domain.pdb
+D:\FPT STUDY\8_SPRING 2026\SWD392\Personal-Github\src\Domain\obj\Debug\net8.0\ref\Domain.dll

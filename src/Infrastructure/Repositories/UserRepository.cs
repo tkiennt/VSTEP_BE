@@ -64,4 +64,28 @@ public class UserRepository : IUserRepository
     {
         return await _context.Users.AnyAsync(u => u.Email == email);
     }
+
+    public async Task<List<User>> GetAllAsync()
+    {
+        return await _context.Users
+            .AsNoTracking()
+            .Include(u => u.TargetLevel)
+            .OrderBy(u => u.Id)
+            .ToListAsync();
+    }
+
+    public async Task DeleteAsync(int id)
+    {
+        var user = await _context.Users.FindAsync(id);
+        if (user != null)
+        {
+            _context.Users.Remove(user);
+            await _context.SaveChangesAsync();
+        }
+    }
+
+    public async Task<int> GetTotalCountAsync()
+    {
+        return await _context.Users.CountAsync();
+    }
 }

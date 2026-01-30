@@ -422,9 +422,108 @@ The system uses **JWT (JSON Web Token)** for stateless authentication:
 |--------|----------|-------------|---------------|--------|
 | GET | `/api/user/profile` | Get current user profile from database | Yes | Authenticated |
 | PUT | `/api/user/profile` | Update profile (name, email, target_level_id) | Yes | Authenticated |
+| POST | `/api/user/change-password` | Change current user password | Yes | Authenticated |
+| GET | `/api/user/stats` | Get user statistics and activity summary | Yes | Authenticated |
+| GET | `/api/user/practice-history` | Get user practice history | Yes | Authenticated |
 | GET | `/api/user/user-only` | Test endpoint for UserOrAbove policy | Yes | UserOrAbove |
 | GET | `/api/user/manager-only` | Test endpoint for ManagerOrAdmin policy | Yes | ManagerOrAdmin |
 | GET | `/api/user/admin-only` | Test endpoint for AdminOnly policy | Yes | AdminOnly |
+
+### Admin User Management (`/api/admin/users`)
+
+| Method | Endpoint | Description | Auth Required | Policy |
+|--------|----------|-------------|---------------|--------|
+| GET | `/api/admin/users` | Get all users with pagination, search, and sorting | Yes | AdminOnly |
+| GET | `/api/admin/users/{id}` | Get user details by ID | Yes | AdminOnly |
+| POST | `/api/admin/users` | Create a new user | Yes | AdminOnly |
+| PUT | `/api/admin/users/{id}` | Update user information | Yes | AdminOnly |
+| PUT | `/api/admin/users/{id}/password` | Update user password | Yes | AdminOnly |
+| DELETE | `/api/admin/users/{id}` | Delete a user (cannot delete admins) | Yes | AdminOnly |
+| PATCH | `/api/admin/users/{id}/toggle-status` | Toggle user active status | Yes | AdminOnly |
+| GET | `/api/admin/users/count` | Get total user count | Yes | AdminOnly |
+
+#### Admin User Management Examples
+
+**Get all users with pagination and search:**
+```
+GET /api/admin/users?page=1&pageSize=10&search=john&sortBy=name&sortDesc=false
+```
+
+**Create a new user:**
+```json
+POST /api/admin/users
+{
+  "name": "John Doe",
+  "username": "johndoe",
+  "email": "john@example.com",
+  "phoneNumber": "0912345678",
+  "password": "SecurePassword123!",
+  "role": "User",
+  "targetLevelId": 2,
+  "isActive": true
+}
+```
+
+**Update user information:**
+```json
+PUT /api/admin/users/123
+{
+  "name": "John Smith",
+  "phoneNumber": "0987654321",
+  "role": "Manager",
+  "targetLevelId": 3,
+  "isActive": true
+}
+```
+
+**Update user password:**
+```json
+PUT /api/admin/users/123/password
+{
+  "newPassword": "NewSecurePassword456!"
+}
+```
+
+**Toggle user status:**
+```
+PATCH /api/admin/users/123/toggle-status
+```
+
+#### User Profile Examples
+
+**Get current user profile:**
+```
+GET /api/user/profile
+```
+
+**Update user profile:**
+```json
+PUT /api/user/profile
+{
+  "name": "John Doe",
+  "email": "john.doe@example.com",
+  "targetLevelId": 2
+}
+```
+
+**Change password:**
+```json
+POST /api/user/change-password
+{
+  "currentPassword": "OldPassword123!",
+  "newPassword": "NewPassword456!"
+}
+```
+
+**Get user statistics:**
+```
+GET /api/user/stats
+```
+
+**Get practice history:**
+```
+GET /api/user/practice-history?limit=20
+```
 
 ---
 

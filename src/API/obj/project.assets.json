@@ -3349,11 +3349,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\FPT STUDY\\8_SPRING 2026\\SWD392\\Github\\fptu-swd392\\Backend\\src\\API\\API.csproj",
+      "projectUniqueName": "D:\\FPT STUDY\\8_SPRING 2026\\SWD392\\Personal-Github\\src\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "D:\\FPT STUDY\\8_SPRING 2026\\SWD392\\Github\\fptu-swd392\\Backend\\src\\API\\API.csproj",
+      "projectPath": "D:\\FPT STUDY\\8_SPRING 2026\\SWD392\\Personal-Github\\src\\API\\API.csproj",
       "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "D:\\FPT STUDY\\8_SPRING 2026\\SWD392\\Github\\fptu-swd392\\Backend\\src\\API\\obj\\",
+      "outputPath": "D:\\FPT STUDY\\8_SPRING 2026\\SWD392\\Personal-Github\\src\\API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3374,11 +3374,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\FPT STUDY\\8_SPRING 2026\\SWD392\\Github\\fptu-swd392\\Backend\\src\\Application\\Application.csproj": {
-              "projectPath": "D:\\FPT STUDY\\8_SPRING 2026\\SWD392\\Github\\fptu-swd392\\Backend\\src\\Application\\Application.csproj"
+            "D:\\FPT STUDY\\8_SPRING 2026\\SWD392\\Personal-Github\\src\\Application\\Application.csproj": {
+              "projectPath": "D:\\FPT STUDY\\8_SPRING 2026\\SWD392\\Personal-Github\\src\\Application\\Application.csproj"
             },
-            "D:\\FPT STUDY\\8_SPRING 2026\\SWD392\\Github\\fptu-swd392\\Backend\\src\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "D:\\FPT STUDY\\8_SPRING 2026\\SWD392\\Github\\fptu-swd392\\Backend\\src\\Infrastructure\\Infrastructure.csproj"
+            "D:\\FPT STUDY\\8_SPRING 2026\\SWD392\\Personal-Github\\src\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "D:\\FPT STUDY\\8_SPRING 2026\\SWD392\\Personal-Github\\src\\Infrastructure\\Infrastructure.csproj"
             }
           }
         }
